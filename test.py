@@ -10,8 +10,8 @@ def test():
     array = [1, 2, 3, 4, 5, 6, 7, 8]
     target = 5
     right_index_range = [2, 4]
-    index_rage = get_index_range(array, target)
-    assert index_rage == right_index_range
+    index_range = get_index_range(array, target)
+    assert index_range == right_index_range
 
     # target: 6 (low выйдет за границы массива)
     # idx     0 1 2 3 4 5 6 7
@@ -21,8 +21,8 @@ def test():
     array = [1, 2, 3, 4, 5, 6, 7, 8]
     target = 6
     right_index_range = [4, 7]
-    index_rage = get_index_range(array, target)
-    assert index_rage == right_index_range
+    index_range = get_index_range(array, target)
+    assert index_range == right_index_range
 
     # target: 1 (target на нулевом элементе)
     # idx     0 1 2 3 4 5 6 7
@@ -32,8 +32,8 @@ def test():
     array = [1, 2, 3, 4, 5, 6, 7, 8]
     target = 1
     right_index_range = [0, 1]
-    index_rage = get_index_range(array, target)
-    assert index_rage == right_index_range
+    index_range = get_index_range(array, target)
+    assert index_range == right_index_range
 
 
 if __name__ == "__main__":
